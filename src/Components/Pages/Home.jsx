@@ -1,9 +1,11 @@
+import HeroImage from "../UI Components/HeroImage";
+
 export default function Home() {
 
     return(
         <>
         <section>
-            <h2>Homepage</h2>
+            <HeroImage />
         </section>
         </>
     )
