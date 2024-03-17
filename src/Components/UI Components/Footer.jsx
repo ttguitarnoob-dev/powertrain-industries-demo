@@ -12,7 +12,7 @@ export default function Footer() {
                     <PhoneIcon />
                 </div>
                 <div>
-                    <a target="_blank" href="https://travisty-creations.com">© 2024 Travisty Creations</a>
+                    <a className="text-white" target="_blank" href="https://travisty-creations.com">© 2024 Travisty Creations</a>
                 </div>
             </section>
         </>
