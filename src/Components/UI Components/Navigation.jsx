@@ -1,8 +1,10 @@
-import React from "react";
-import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
 
-export default function Navigation() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+import { useState } from "react";
+
+export default function Navigation({isActive, setIsActive}) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
 
   const menuItems = [
     "About",
@@ -11,6 +13,8 @@ export default function Navigation() {
     "Catalogs",
     "Contact"
   ];
+
+  console.log('pooasss', isActive)
 
   return (
     <Navbar
@@ -39,8 +43,8 @@ export default function Navigation() {
             About Us
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
+        <NavbarItem isActive={false}>
+          <Link onClick={() => setIsActive('urmmom')} color="foreground" href="/poosmell" aria-current="page">
             News
           </Link>
         </NavbarItem>

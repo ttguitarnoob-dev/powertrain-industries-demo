@@ -5,3 +5,9 @@
 .App {
   text-align: center;
 }
+
+.separator{
+  border-top: 25px solid #fcc48f;
+	border-right: 20vw solid transparent;
+	height: 0;
+}
