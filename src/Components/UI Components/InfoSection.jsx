@@ -5,7 +5,7 @@ export default function InfoSection({ title, topText, topImage, bottomText, bott
 
     return (
         <>
-            <div className="info-section ml-4">
+            <div className="info-section ml-4" style={{maxHeight: "fit-content"}}>
                 <h2 className="text-5xl text-left">{title}</h2>
                 <div className="flex flex-wrap">
                 <p className="text-left mt-4 max-w-lg p-1">{topText}</p>

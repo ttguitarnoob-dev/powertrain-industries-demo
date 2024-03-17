@@ -1,6 +1,7 @@
 
-import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link, Button, Input} from "@nextui-org/react";
 import { useState } from "react";
+import { SearchIcon } from "./Icons/SearchIcon";
 
 export default function Navigation({isActive, setIsActive}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -65,7 +66,20 @@ export default function Navigation({isActive, setIsActive}) {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent justify="end">
+      <NavbarContent as="div" className="items-center" justify="end">
+        
+      <Input
+          classNames={{
+            base: "hidden lg:flex max-w-full sm:max-w-[10rem] h-10",
+            mainWrapper: "h-full",
+            input: "text-small",
+            inputWrapper: "h-full font-normal text-default-500 bg-default-400/20 dark:bg-default-500/20",
+          }}
+          placeholder="Type to search..."
+          size="sm"
+          startContent={<SearchIcon size={18} />}
+          type="search"
+        />
         <NavbarItem className="hidden lg:flex">
           <Link href="#">Login</Link>
         </NavbarItem>
