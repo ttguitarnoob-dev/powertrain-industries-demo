@@ -6,11 +6,11 @@
   text-align: center;
 }
 
-.separator{
-  border-top: 25px solid #fcc48f;
+/* .separator{
+  border-top: 25px solid #f9b576;
 	border-right: 20vw solid transparent;
 	height: 0;
-}
+} */
 
 .sidebar{
   border-right: 1px solid black;
@@ -34,7 +34,7 @@
 
 .footer{
   background-color: black;
-  height: 50px;
+  height: 90px;
 }
 
 @media screen and (max-width: 620px) {
