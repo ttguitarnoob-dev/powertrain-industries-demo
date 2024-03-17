@@ -6,7 +6,7 @@ export default function SideBar() {
         <>
             <section className="sidebar ml-2">
                 <div className="mb-5 mt-4">
-                    <h2>What's New</h2>
+                    <h2 className="text-xl font-bold text-left">What's New</h2>
                 </div>
                 <div className="mb-10">
                     <Card isFooterBlurred className="w-full h-[200px] col-span-12 sm:col-span-5">

@@ -4,6 +4,7 @@ import Navigation from "./Components/UI Components/Navigation";
 import Home from "./Components/Pages/Home";
 import { useState } from "react";
 import SideBar from "./Components/UI Components/SideBar";
+import Footer from "./Components/UI Components/Footer";
 
 function App() {
   const [isActive, setIsActive] = useState()
@@ -13,6 +14,7 @@ function App() {
        <NextUIProvider>
         <Navigation isActive={isActive} setIsActive={setIsActive} />
         <Home />
+        <Footer />
     </NextUIProvider>
     </div>
   );
