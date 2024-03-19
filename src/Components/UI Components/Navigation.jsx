@@ -84,7 +84,7 @@ export default function Navigation({isActive, setIsActive}) {
           <Link href="#">Login</Link>
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} color="warning" href="#" variant="flat">
+          <Button as={Link} color="primary" href="#" >
             Sign Up
           </Button>
         </NavbarItem>
