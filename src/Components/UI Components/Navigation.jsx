@@ -2,6 +2,7 @@
 import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link, Button, Input} from "@nextui-org/react";
 import { useState } from "react";
 import { SearchIcon } from "./Icons/SearchIcon";
+import { Logo } from "./Icons/Logo";
 
 export default function Navigation({isActive, setIsActive}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,13 +31,14 @@ export default function Navigation({isActive, setIsActive}) {
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
           {/* logo */}
-          <p className="font-bold text-inherit">PowerTrain Industries</p>
+          <Logo />
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
           {/* logo */}
+          <Logo />
           <p className="font-bold text-inherit">PowerTrain Industries</p>
         </NavbarBrand>
         <NavbarItem>
